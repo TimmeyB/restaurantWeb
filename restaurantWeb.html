@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+        text-align: center;
+        background-color: salmon;
+        color:brown;
+    }
+    h1{
+        text-align: left;
+        text-decoration: overline;
+    }
+    a{
+        text-decoration: none;
+        padding: 20px;
+        color:brown;
+    }
+    #order{
+        text-align:center;
+        font-size: 30px;
+    }
+    footer{
+        text-align: center;
+    }
+    img{
+        padding: 20px;
+    }
+    
+   
+    </style>
+<body>
+    <h1>ST Timmey food restaurant.</h1>
+    <nav class="nav">
+        <a href="javascript:void(0)" onclick="close()"></a>
+        <a href="#Mail">Mail</a>
+        <a href="#Contact">Contact Us</a>
+        <a href="#Order">Order</a>
+        <a href="#about" >About Us</a>
+    </nav>
+    <div class="topm">
+        <div class="left" onclick="open()"></div>
+    </div>
+          <img src="pasta.jpg" alt="pasta" style="width: 50%;">
+
+          
+          <img src="recipe.jpg" style="width:50%">
+          <img src="coffeehouse2.jpg" style="width:50%">
+            <img src="download.jpg" style="width: 50%;">
+            
+
+<div id="h2">
+<h2>About Us</h2>
+We offer you the best service, order for any food of your choice and it would be delivered right on your doorstep.
+</div>
+
+<div id="order">
+<form action="action.php" method="post">
+    Address:<br>
+    <input type="text" placeholder="Type in your address here" required><br>
+    Order:<br>
+    <input list="foods" placeholder="choose your favourite food">
+    
+    <datalist id="foods">
+        <option value="pizza">
+            <option value="burger">
+                <option value="hotdog">
+                    <option value="chocolate chip cookies">
+                        <option value="s'mores">
+                            <option value="cronut">
+                                <option value="coffee">
+                                    <option value="pancake">
+                                        <option value="chicken and waffles">
+                                            <option value="mac and cheese">
+    </datalist>
+
+    <br>
+    Phone:<br>
+    <input type="tel" placeholder="What is your number?" required><br>
+    Name:<br>
+    <input type="text" placeholder="What is your name?" required><br>
+    <input type="submit" value="order">
+</form>
+</div>
+<div id="cont">
+<footer>Contact us at sttimmeyfood@gmail.com</footer>
+</div>
+
+<script>
+
+   
+</script>
+</body>
+</html>
